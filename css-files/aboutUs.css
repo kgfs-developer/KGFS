@@ -1,0 +1,47 @@
+      /* Founder Image Zoom on Hover */
+      .about-img-wrapper:hover .about-img {
+          transform: scale(1.05);
+          transition: transform 0.5s ease;
+      }
+
+      /* Team Card */
+      .team-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .team-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Team Image Zoom */
+      .team-img {
+          transition: transform 0.5s ease;
+      }
+
+      .team-card:hover .team-img {
+          transform: scale(1.1);
+      }
+
+      /* Social Icons */
+      .team-social {
+          opacity: 0;
+          transition: opacity 0.3s;
+          margin-top: 5px;
+      }
+
+      .team-card:hover .team-social {
+          opacity: 1;
+      }
+
+      .team-social a {
+          color: #4a6bff;
+          margin: 0 6px;
+          font-size: 16px;
+          transition: transform 0.3s, color 0.3s;
+      }
+
+      .team-social a:hover {
+          color: #25d366;
+          transform: translateY(-3px);
+      }

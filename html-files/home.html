@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KGFs Consultant | Web Developer</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css-files/home.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img src="../images/kgfs-logo.png" alt="KGFs Consultant Logo" style="height: 50px; width: auto; border-radius: 50%;" />
+          <span class="fw-bold ms-2">KGFs Consultant</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <button id="modeToggle" class="btn btn-outline-secondary ms-3"><i class="fas fa-moon"></i></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 hero-content">
+            <h1>Hi, I'm Aman Kumar<br />A Web Developer</h1>
+            <p>
+              I create beautiful, functional websites and web applications that help businesses achieve their goals.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a
+                href="assets/John-Doe-CV.pdf"
+                class="btn btn-outline-light"
+                download
+              >
+                <i class="fas fa-download me-2"></i>Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- About Section -->
+    <section class="section about-section py-5" id="about">
+      <div class="container">
+        <!-- <h2 class="section-title text-center mb-5">About Me</h2> -->
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+            <div class="about-img-wrapper position-relative d-inline-block">
+              <img
+                src="../images/aman-web-img.png"
+                alt="Aman Kumar"
+                class="img-fluid rounded-4 shadow-lg about-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-content p-4 rounded-4 shadow-sm bg-white h-100">
+              <h3 class="fw-bold mb-3 text-primary">Hi, I'm Aman Kumar</h3>
+              <p class="lead mb-3">
+                I’m a passionate <strong>front-end web developer</strong> who
+                loves turning ideas into clean, responsive, and user-friendly
+                websites.
+              </p>
+              <ul class="about-list list-unstyled mb-3">
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  Skilled in <strong>HTML5, CSS3, Bootstrap, JavaScript</strong>
+                  <span class="badge bg-info ms-2">Learning Angular</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  Built real-world projects for clients and businesses.
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  Focused on practical design and smooth user experience
+                </li>
+              </ul>
+              <div class="about-cta d-flex flex-wrap gap-2 mb-3">
+                <span class="badge bg-secondary">Freelance Projects</span>
+              </div>
+              <p class="mb-0">
+                Whether you’re a company looking for a reliable developer or a
+                business owner in need of a custom website — I’m here to help.
+              </p>
+              <div class="mt-4">
+                <a href="#contact" class="btn btn-primary me-2">Contact Me</a>
+                <a
+                  href="assets/John-Doe-CV.pdf"
+                  class="btn btn-outline-primary"
+                  download
+                >
+                  <i class="fas fa-download me-1"></i>Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-light" id="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="row">
+          <!-- Frontend Skills -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h4 class="mb-3 text-primary">
+                  <i class="fas fa-laptop-code me-2"></i>Frontend
+                </h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-primary px-3 py-2 mb-1"
+                    >HTML5</span
+                  >
+                  <span class="badge rounded-pill bg-primary px-3 py-2 mb-1"
+                    >CSS3</span
+                  >
+                  <span class="badge rounded-pill bg-primary px-3 py-2 mb-1"
+                    >JavaScript</span
+                  >
+                  <span class="badge rounded-pill bg-primary px-3 py-2 mb-1"
+                    >Bootstrap</span
+                  >
+                  <span class="badge rounded-pill bg-primary px-3 py-2 mb-1"
+                    >Angular<i class="text-white fa-xs"> (in progress)</i></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend Skills -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h4 class="mb-3 text-success">
+                  <i class="fas fa-server me-2"></i>Backend<i
+                    class="text-success fa-2xs"
+                  >
+                    (in progress)</i
+                  >
+                </h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >Node.js</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >Express.js</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >MongoDB</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >Firebase</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >Prisma</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >REST APIs</span
+                  >
+                  <span class="badge rounded-pill bg-success px-3 py-2 mb-1"
+                    >Authentication</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Full Stack & Other Skills -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h4 class="mb-3 text-warning">
+                  <i class="fas fa-layer-group me-2"></i>Full Stack & Other<i
+                    class="text-warning fa-2xs"
+                  >
+                    (in progress)</i
+                  >
+                </h4>
+                <div class="d-flex flex-wrap gap-2">
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >Next.js</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >React Native</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >Chart.js &amp; D3.js</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >UI/UX Design</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >Vercel &amp; Netlify</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >Git &amp; GitHub</span
+                  >
+                  <span
+                    class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-1"
+                    >Agile &amp; Scrum</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="E-commerce Platform"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Web Application</span>
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-description">
+                  A full-featured e-commerce platform with product catalog,
+                  shopping cart, user authentication, and payment processing.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Task Management App"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Mobile App</span>
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">
+                  A cross-platform mobile application for task management with
+                  real-time collaboration features and cloud sync.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Redux</span>
+                  <span class="tag">Push Notifications</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Portfolio Website"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Website</span>
+                <h3 class="project-title">Creative Portfolio</h3>
+                <p class="project-description">
+                  A stunning portfolio website for a graphic designer with
+                  smooth animations, gallery integration, and contact form.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">GSAP</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Social Media Dashboard"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Dashboard</span>
+                <h3 class="project-title">Social Media Dashboard</h3>
+                <p class="project-description">
+                  An analytics dashboard for social media management with
+                  real-time data visualization and reporting tools.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">D3.js</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Chart.js</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Blog Platform"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Web Application</span>
+                <h3 class="project-title">Blog Platform</h3>
+                <p class="project-description">
+                  A content management system for bloggers with rich text
+                  editing, media management, and SEO optimization.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">Prisma</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Weather App"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Mobile App</span>
+                <h3 class="project-title">Weather Forecast</h3>
+                <p class="project-description">
+                  A weather application with real-time data, 7-day forecasts,
+                  and location-based weather updates.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">OpenWeather API</span>
+                  <span class="tag">Geolocation</span>
+                  <span class="tag">Animations</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Freelancing Experience Section -->
+    <section class="section" id="freelance">
+      <div class="container">
+        <h2 class="section-title">Freelancing Experience</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Business Website for Local Bakery"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Website</span>
+                <h3 class="project-title">Bakery Business Website</h3>
+                <p class="project-description">
+                  Developed a responsive website for a local bakery to showcase
+                  products, accept online orders, and manage customer inquiries.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">WordPress</span>
+                  <span class="tag">WooCommerce</span>
+                  <span class="tag">SEO</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="SaaS Dashboard for Startup"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Web Application</span>
+                <h3 class="project-title">SaaS Analytics Dashboard</h3>
+                <p class="project-description">
+                  Built a custom analytics dashboard for a SaaS startup,
+                  featuring real-time data visualization and user management.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">D3.js</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Portfolio for Designer"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Portfolio</span>
+                <h3 class="project-title">Designer Portfolio</h3>
+                <p class="project-description">
+                  Created a visually appealing portfolio website for a freelance
+                  designer to highlight their work and attract new clients.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">GSAP</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section: Place this just before the Testimonials Section -->
+    <section class="section bg-white" id="pricing">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">
+          Website Development Pricing
+        </h2>
+        <div class="row justify-content-center">
+          <!-- Basic Package -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card pricing-card h-100 shadow-sm border-primary">
+              <div class="card-header bg-primary text-white text-center">
+                <h3 class="mb-0">Basic</h3>
+                <p class="fs-4 mb-0">₹7,999</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Up to 3 Pages
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Responsive
+                    Design
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Contact Form
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Basic SEO
+                    Setup
+                  </li>
+                  <li>
+                    <i class="fas fa-times text-danger me-2"></i>Blog/Portfolio
+                    Section
+                  </li>
+                  <li>
+                    <i class="fas fa-times text-danger me-2"></i>Custom Features
+                  </li>
+                  <li>
+                    <i class="fas fa-times text-danger me-2"></i>Free
+                    Maintenance
+                  </li>
+                </ul>
+                <div class="d-grid">
+                  <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Advance Package -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card pricing-card h-100 shadow-sm border-success">
+              <div class="card-header bg-success text-white text-center">
+                <h3 class="mb-0">Advance</h3>
+                <p class="fs-4 mb-0">₹14,999</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Up to 8 Pages
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Responsive
+                    Design
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Contact &
+                    Inquiry Forms
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>SEO
+                    Optimization
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Blog or
+                    Portfolio Section
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Basic
+                    Animations
+                  </li>
+                  <li>
+                    <i class="fas fa-times text-danger me-2"></i>Custom Features
+                  </li>
+                  <li>
+                    <i class="fas fa-times text-danger me-2"></i>Free
+                    Maintenance
+                  </li>
+                </ul>
+                <div class="d-grid">
+                  <a href="#contact" class="btn btn-success">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Package -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card pricing-card h-100 shadow-sm border-warning">
+              <div class="card-header bg-warning text-dark text-center">
+                <h3 class="mb-0">Premium</h3>
+                <p class="fs-4 mb-0">₹24,999</p>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Unlimited
+                    Pages
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Responsive &
+                    Custom Design
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>All Forms &
+                    Integrations
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Advanced SEO &
+                    Analytics
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Blog,
+                    Portfolio, E-commerce
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Custom
+                    Features & Animations
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>1 Month Free
+                    Maintenance
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Priority
+                    Support
+                  </li>
+                </ul>
+                <div class="d-grid">
+                  <a href="#contact" class="btn btn-warning text-dark"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-3 text-muted">
+          Need something custom? <a href="#contact">Contact me</a> for a
+          tailored quote!
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section bg-light" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <p class="testimonial-content">
+                "John is an exceptional developer who delivered our e-commerce
+                platform ahead of schedule. His attention to detail and
+                problem-solving skills were impressive. The website has
+                significantly increased our online sales."
+              </p>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
+                    alt="Sarah Johnson"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Sarah Johnson</h5>
+                  <p class="client-role">CEO, Fashion Boutique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <p class="testimonial-content">
+                "Working with John was a pleasure. He understood our vision for
+                the mobile app and brought it to life with beautiful design and
+                flawless functionality. His communication throughout the project
+                was excellent."
+              </p>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
+                    alt="Michael Chen"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Michael Chen</h5>
+                  <p class="client-role">Founder, TechStart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <p class="testimonial-content">
+                "John transformed our outdated website into a modern,
+                user-friendly platform that has improved our customer engagement
+                by 40%. His expertise in responsive design ensured our site
+                looks great on all devices."
+              </p>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359144-b467cb785e75?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
+                    alt="Emily Rodriguez"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Emily Rodriguez</h5>
+                  <p class="client-role">
+                    Marketing Director, Global Solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="footer-text">© 2023 Aman Kumar. All rights reserved.</p>
+        <p class="footer-text">Designed and developed with ❤️ by Aman Kumar</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js-files/home.js"></script>
+  </body>
+</html>
