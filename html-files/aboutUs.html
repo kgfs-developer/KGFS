@@ -41,55 +41,48 @@
     <link rel="icon" href="images/kgfs-logo.png" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white"
-    >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#home">
-          <img
-            src="../images/kgfs-logo.png"
-            alt="KGFs Consultant Logo"
-            style="height: 50px; width: auto; border-radius: 50%"
-          />
-          <span class="fw-bold ms-2">KGFs Consultant</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          title="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutUs.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <button id="modeToggle" class="btn btn-outline-secondary ms-3">
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img
+        src="../images/kgfs-logo.png"
+        alt="KGFs Consultant Logo"
+        style="height: 50px; width: auto; border-radius: 50%"
+      />
+      <span class="fw-bold ms-2 text-primary">KGFs Consultant</span>
+    </a>
 
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-links">
+        <li class="nav-item" data-icon="fas fa-home">
+          <a class="nav-link " href="../index.html">Home</a>
+        </li>
+        <li class="nav-item" data-icon="fas fa-user">
+          <a class="nav-link active" href="aboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item" data-icon="fas fa-briefcase">
+          <a class="nav-link " href="services.html">Services</a>
+        </li>
+        <li class="nav-item" data-icon="fas fa-project-diagram">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item" data-icon="fas fa-comments">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item" data-icon="fas fa-envelope">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Bottom Navbar -->
+<nav class="mobile-bottom-nav d-lg-none">
+  <ul class="nav-links"></ul>
+</nav>
     <!-- ===== About Section: Founder Info ===== -->
     <section class="section about-section py-5" id="about">
       <div class="container">
