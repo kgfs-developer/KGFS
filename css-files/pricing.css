@@ -1,0 +1,285 @@
+
+/* Traditional Pricing */
+#pricing .card {
+  transition: transform 0.2s;
+}
+#pricing .card:hover {
+  transform: translateY(-4px);
+}
+
+/* Subscription Section */
+#pricing-free {
+  padding: 6rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#pricing-free h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+#pricing-free .text-muted {
+  color: #6b7280;
+  margin: 0;
+}
+
+.billing-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: #6b7280;
+}
+
+.save-badge {
+  color: #10b981;
+  font-size: 13px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-track {
+  position: absolute;
+  inset: 0;
+  background: #e6e6e6;
+  border-radius: 999px;
+  transition: background 0.25s;
+  pointer-events: none;
+}
+
+.toggle-dot {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s;
+  pointer-events: none;
+}
+
+#billingToggleSub:checked + .toggle-track {
+  background: #4a6bff;
+}
+
+#billingToggleSub:checked ~ .toggle-dot {
+  transform: translateX(24px);
+}
+
+.plan-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  position: relative;
+}
+
+.plan-card.popular {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid rgba(74, 107, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(74, 107, 255, 0.08);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fbbf24;
+  color: #111827;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.plan-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.plan-price {
+  margin: 12px 0 8px;
+  color: #374151;
+}
+
+.price-monthly,
+.price-yearly {
+  font-weight: 700;
+}
+
+.price-monthly {
+  font-size: 28px;
+}
+
+.price-yearly {
+  font-size: 20px;
+  display: none;
+}
+
+.price-suffix {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.plan-card ul {
+  color: #374151;
+  margin: 8px 0 16px;
+  padding-left: 16px;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.plan-actions button,
+.plan-actions a {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-subscribe {
+  background: #4a6bff;
+  color: white;
+}
+
+.plan-card.popular .btn-subscribe {
+  background: #111827;
+}
+
+.btn-upi {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.note {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+/* UPI Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 23, 0.6);
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 420px;
+  max-width: 92%;
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(2, 6, 23, 0.4);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#closeUpi {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.qr-container {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#upiQr {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.modal-actions button,
+.modal-actions a {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.modal-actions button {
+  background: #4a6bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-actions a {
+  background: #f3f4f6;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-note {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 10px 0 0;
+}

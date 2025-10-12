@@ -1,0 +1,81 @@
+  /* Entry animation for form */
+  .animated-form {
+    animation: fadeInUp 0.8s cubic-bezier(.42,0,.58,1) both;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  /* Floating label animation */
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown) {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+  }
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #198754;
+    font-weight: 600;
+    transform: scale(0.85) translateY(-0.5rem);
+    transition: all 0.2s;
+  }
+
+  /* Validation feedback animation */
+  .animated-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    animation: shake 0.3s;
+  }
+  .form-control.is-invalid ~ .animated-feedback,
+  .is-invalid + .animated-feedback,
+  .dropdown.is-invalid + .animated-feedback {
+    display: block;
+    animation: shake 0.3s;
+  }
+  @keyframes shake {
+    0% { transform: translateX(0);}
+    25% { transform: translateX(-6px);}
+    50% { transform: translateX(6px);}
+    75% { transform: translateX(-6px);}
+    100% { transform: translateX(0);}
+  }
+
+  /* Success border */
+  .form-control.is-valid {
+    border-color: #198754 !important;
+  }
+
+  /* Custom dropdown */
+  .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background 0.2s;
+  }
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  .dropdown-item:active {
+    background-color: #e9ecef;
+  }
+  #serviceDropdown:focus {
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+    border-color: #198754;
+  }
+
+  /* Animated submit button */
+  .animated-btn {
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .animated-btn:hover, .animated-btn:focus {
+    box-shadow: 0 8px 24px rgba(25,135,84,0.18);
+    transform: scale(1.04);
+    background: linear-gradient(90deg, #198754 60%, #00c6ff 100%);
+    color: #fff;
+  }
