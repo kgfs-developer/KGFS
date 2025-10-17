@@ -24,6 +24,8 @@ billingToggle?.addEventListener("change", () => {
 
   document.querySelectorAll(".price-monthly").forEach(el => el.style.display = isYearly ? "none" : "inline");
   document.querySelectorAll(".price-yearly").forEach(el => el.style.display = isYearly ? "inline" : "none");
+  document.querySelectorAll(".price-suffix-month").forEach(el => el.style.display = isYearly ? "none" : "inline");
+  document.querySelectorAll(".price-suffix-year").forEach(el => el.style.display = isYearly ? "inline" : "none");
 });
 
 // === WhatsApp Subscribe Buttons ===
