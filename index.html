@@ -20,11 +20,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css-files/home.css" />
     <link rel="stylesheet" href="css-files/index.css" />
-    <link rel="stylesheet" href="css-files/services.css" />
-    <link rel="stylesheet" href="css-files/nav.css" />
+    <link rel="stylesheet" href="css-files/aboutUs.css" />
+    <link rel="stylesheet" href="css-files/contact-form.css" />
     <link rel="stylesheet" href="css-files/floating.css" />
+    <link rel="stylesheet" href="css-files/footer.css" />
+    <link rel="stylesheet" href="css-files/nav.css" />
+    <link rel="stylesheet" href="css-files/pricing.css" />
+    <link rel="stylesheet" href="css-files/projects.css" />
+    <link rel="stylesheet" href="css-files/services.css" />
+    <link rel="stylesheet" href="css-files/testimonial.css" />
 
     <!-- SEO Meta -->
     <meta
@@ -45,7 +50,7 @@
     >
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="#home">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img
             src="images/kgfs-logo-primary.png"
             alt="KGFs Consultant Logo"
@@ -58,6 +63,7 @@
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             "
+            href="index.html"
             >KGFs Consultant</span
           >
         </a>
@@ -112,7 +118,7 @@
           Welcome to
           <span
             style="
-              font-size: 2.5rem;
+              font-size: 2rem;
               background: linear-gradient(90deg, #4a6bff, #00c6ff);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -124,8 +130,10 @@
           Your trusted partner for
           <span class="text-primary">Web Development & Digital Growth</span>
         </p>
-        <a href="#contact" class="btn btn-primary btn-lg me-2">Get Started</a>
-        <a href="#projects" class="btn btn-outline-dark btn-lg"
+        <a href="html-files/pricing.html" class="btn btn-primary btn-lg me-2"
+          >Get Started</a
+        >
+        <a href="html-files/projects.html" class="btn btn-outline-dark btn-lg"
           >View Projects</a
         >
         <div class="mt-4">
@@ -145,7 +153,7 @@
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
-      <div class="container">
+      <div class="container service-container">
         <div class="text-center mb-5">
           <h2 class="fw-bold display-5">Our Services</h2>
           <p class="text-muted fs-5">
@@ -183,8 +191,10 @@
                   Support
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-primary btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-primary btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -218,76 +228,10 @@
                   Dashboard
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-success btn-sm"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <!-- Frontend Development -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="service-card h-100 text-center p-4 border-0 shadow-lg position-relative"
-            >
-              <span class="service-icon bg-danger text-white mb-3"
-                ><i class="bi bi-code-slash"></i
-              ></span>
-              <h5 class="fw-bold mb-2">Frontend Development</h5>
-              <p class="text-muted mb-3">
-                Modern, interactive user interfaces using the latest
-                technologies.
-              </p>
-              <ul
-                class="list-unstyled text-start mx-auto mb-3"
-                style="max-width: 220px"
-              >
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> React,
-                  Angular, Vue
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Responsive
-                  Design
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Animation &
-                  Effects
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn-outline-danger btn-sm"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <!-- Backend Development -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="service-card h-100 text-center p-4 border-0 shadow-lg position-relative"
-            >
-              <span class="service-icon bg-warning text-white mb-3"
-                ><i class="bi bi-server"></i
-              ></span>
-              <h5 class="fw-bold mb-2">Backend Development</h5>
-              <p class="text-muted mb-3">
-                Robust server-side solutions for scalable web applications.
-              </p>
-              <ul
-                class="list-unstyled text-start mx-auto mb-3"
-                style="max-width: 220px"
-              >
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Node.js,
-                  Express
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> RESTful APIs
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Database
-                  Integration
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn-outline-warning btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-success btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -319,41 +263,10 @@
                   <i class="bi bi-check-circle text-success"></i> Google Ranking
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-info btn-sm"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <!-- UI/UX Design -->
-          <div class="col-md-6 col-lg-4">
-            <div
-              class="service-card h-100 text-center p-4 border-0 shadow-lg position-relative"
-            >
-              <span class="service-icon bg-secondary text-white mb-3"
-                ><i class="bi bi-palette"></i
-              ></span>
-              <h5 class="fw-bold mb-2">UI/UX Design</h5>
-              <p class="text-muted mb-3">
-                Creative, user-centric designs for memorable digital
-                experiences.
-              </p>
-              <ul
-                class="list-unstyled text-start mx-auto mb-3"
-                style="max-width: 220px"
-              >
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Wireframes &
-                  Prototypes
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> Brand Identity
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success"></i> User Testing
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn-outline-secondary btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-info btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -395,8 +308,10 @@
                   Digital Formats
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-primary btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-primary btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -428,8 +343,10 @@
                   <i class="bi bi-check-circle text-success"></i> Event Graphics
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-success btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-success btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -462,8 +379,10 @@
                   Effects
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-warning btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-warning btn-sm"
+                >Know More</a
               >
             </div>
           </div>
@@ -496,287 +415,18 @@
                   Feature Updates
                 </li>
               </ul>
-              <a href="#contact" class="btn btn-outline-info btn-sm"
-                >Learn More</a
+              <a
+                href="https://wa.me/919798107150"
+                class="btn btn-outline-info btn-sm"
+                >Know More</a
               >
             </div>
           </div>
         </div>
-        <!-- CTA -->
-        <div class="text-center mt-5">
-          <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
-        </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="E-commerce Platform"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Web Application</span>
-                <h3 class="project-title">E-commerce Platform</h3>
-                <p class="project-description">
-                  A full-featured e-commerce platform with product catalog,
-                  shopping cart, user authentication, and payment processing.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">MongoDB</span>
-                  <span class="tag">Stripe</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="Task Management App"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Mobile App</span>
-                <h3 class="project-title">Task Management App</h3>
-                <p class="project-description">
-                  A cross-platform mobile application for task management with
-                  real-time collaboration features and cloud sync.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">React Native</span>
-                  <span class="tag">Firebase</span>
-                  <span class="tag">Redux</span>
-                  <span class="tag">Push Notifications</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="Portfolio Website"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Website</span>
-                <h3 class="project-title">Creative Portfolio</h3>
-                <p class="project-description">
-                  A stunning portfolio website for a graphic designer with
-                  smooth animations, gallery integration, and contact form.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">GSAP</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="Social Media Dashboard"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Dashboard</span>
-                <h3 class="project-title">Social Media Dashboard</h3>
-                <p class="project-description">
-                  An analytics dashboard for social media management with
-                  real-time data visualization and reporting tools.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">React</span>
-                  <span class="tag">D3.js</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">Chart.js</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="Blog Platform"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Web Application</span>
-                <h3 class="project-title">Blog Platform</h3>
-                <p class="project-description">
-                  A content management system for bloggers with rich text
-                  editing, media management, and SEO optimization.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Tailwind CSS</span>
-                  <span class="tag">Prisma</span>
-                  <span class="tag">Vercel</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="project-card">
-              <div class="project-img">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
-                  alt="Weather App"
-                />
-              </div>
-              <div class="project-content">
-                <span class="project-category">Mobile App</span>
-                <h3 class="project-title">Weather Forecast</h3>
-                <p class="project-description">
-                  A weather application with real-time data, 7-day forecasts,
-                  and location-based weather updates.
-                </p>
-                <div class="project-tags">
-                  <span class="tag">React Native</span>
-                  <span class="tag">OpenWeather API</span>
-                  <span class="tag">Geolocation</span>
-                  <span class="tag">Animations</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                  <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section bg-light" id="testimonials">
-      <div class="container">
-        <h2 class="section-title">Client Testimonials</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <p class="testimonial-content">
-                "John is an exceptional developer who delivered our e-commerce
-                platform ahead of schedule. His attention to detail and
-                problem-solving skills were impressive. The website has
-                significantly increased our online sales."
-              </p>
-              <div class="client-info">
-                <div class="client-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
-                    alt="Sarah Johnson"
-                  />
-                </div>
-                <div>
-                  <h5 class="client-name">Sarah Johnson</h5>
-                  <p class="client-role">CEO, Fashion Boutique</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <p class="testimonial-content">
-                "Working with John was a pleasure. He understood our vision for
-                the mobile app and brought it to life with beautiful design and
-                flawless functionality. His communication throughout the project
-                was excellent."
-              </p>
-              <div class="client-info">
-                <div class="client-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
-                    alt="Michael Chen"
-                  />
-                </div>
-                <div>
-                  <h5 class="client-name">Michael Chen</h5>
-                  <p class="client-role">Founder, TechStart</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <p class="testimonial-content">
-                "John transformed our outdated website into a modern,
-                user-friendly platform that has improved our customer engagement
-                by 40%. His expertise in responsive design ensured our site
-                looks great on all devices."
-              </p>
-              <div class="client-info">
-                <div class="client-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1573496359144-b467cb785e75?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80"
-                    alt="Emily Rodriguez"
-                  />
-                </div>
-                <div>
-                  <h5 class="client-name">Emily Rodriguez</h5>
-                  <p class="client-role">
-                    Marketing Director, Global Solutions
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-5">
+    <section id="pricing" class="py-5" style="margin-top: 8vh">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Pricing Plans</h2>
@@ -785,9 +435,8 @@
             hidden charges.
           </p>
         </div>
-
         <div class="row g-4">
-          <!-- Starter Plan -->
+          <!-- Starter -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm border-0 text-center p-4">
               <h5 class="fw-bold">Starter</h5>
@@ -802,8 +451,7 @@
               <a href="#contact" class="btn btn-outline-primary">Get Started</a>
             </div>
           </div>
-
-          <!-- Standard Plan -->
+          <!-- Standard -->
           <div class="col-md-4">
             <div
               class="card h-100 shadow-lg border-primary text-center p-4 border-2"
@@ -821,8 +469,7 @@
               <a href="#contact" class="btn btn-success">Get Started</a>
             </div>
           </div>
-
-          <!-- Premium Plan -->
+          <!-- Premium -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm border-0 text-center p-4">
               <h5 class="fw-bold">Premium</h5>
@@ -842,798 +489,1052 @@
       </div>
     </section>
 
-    <!-- ===== FREE SUBSCRIPTION PRICING SECTION (WhatsApp + UPI) ===== -->
-    <section
-      id="pricing-free"
-      class="py-12"
-      style="
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
-          'Helvetica Neue', Arial;
-      "
-    >
-      <div
-        class="container"
-        style="max-width: 1100px; margin: 0 auto; padding: 0 16px"
-      >
-        <div style="text-align: center; margin-bottom: 28px">
-          <h2 style="font-size: 28px; margin: 0 0 8px">Subscription Plans</h2>
-          <p style="color: #6b7280; margin: 0">
-            Free checkout flow — WhatsApp confirmation + UPI payment (zero
-            gateway fees).
-          </p>
+<!-- Subscription Plans (Monthly/Yearly Toggle) -->
+<section id="pricing-free" class="py-12">
+  <div class="container">
+    <div class="text-center mb-7">
+      <h2>Subscription Plans</h2>
+      <p class="text-muted">
+        Free checkout flow — WhatsApp confirmation + UPI payment (zero gateway
+        fees).
+      </p>
+    </div>
+
+    <!-- Billing Toggle -->
+    <div class="billing-toggle-container">
+      <span>Monthly</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="billingToggleSub" />
+        <span class="toggle-track"></span>
+        <span class="toggle-dot"></span>
+      </label>
+      <span>Yearly <span class="save-badge">(Save 20%)</span></span>
+    </div>
+
+    <!-- Plan Cards -->
+    <div class="plan-cards">
+      <!-- Starter -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <h3>Starter</h3>
+          <span>Basic</span>
         </div>
-
-        <!-- Billing toggle -->
-        <div
-          style="
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 24px;
-          "
-        >
-          <span style="color: #6b7280">Monthly</span>
-          <label
-            style="
-              position: relative;
-              display: inline-block;
-              width: 52px;
-              height: 28px;
-            "
-          >
-            <input
-              id="billingToggleSub"
-              type="checkbox"
-              style="opacity: 0; width: 0; height: 0"
-            />
-            <span
-              id="toggleTrackSub"
-              style="
-                position: absolute;
-                inset: 0;
-                background: #e6e6e6;
-                border-radius: 999px;
-                transition: background 0.25s;
-              "
-            ></span>
-            <span
-              id="toggleDotSub"
-              style="
-                position: absolute;
-                left: 4px;
-                top: 4px;
-                width: 20px;
-                height: 20px;
-                background: white;
-                border-radius: 50%;
-                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-                transition: transform 0.25s;
-              "
-            ></span>
-          </label>
-          <span style="color: #6b7280"
-            >Yearly
-            <span style="color: #10b981; font-size: 13px"
-              >(Save 20%)</span
-            ></span
-          >
-        </div>
-
-        <!-- Cards -->
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
-          "
-        >
-          <!-- Starter -->
-          <div
-            class="card"
-            style="
-              background: white;
-              border-radius: 12px;
-              padding: 18px;
-              box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-            "
-          >
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <h3 style="margin: 0; font-size: 18px">Starter</h3>
-              <span style="font-size: 13px; color: #6b7280">Basic</span>
-            </div>
-
-            <p style="margin: 12px 0 8px; color: #6b7280">
-              <span
-                class="price-monthly"
-                style="font-size: 28px; font-weight: 700"
-                >₹499</span
-              >
-              <span
-                class="price-yearly"
-                style="font-size: 20px; font-weight: 700; display: none"
-                >₹4,799</span
-              >
-              <span style="color: #6b7280; font-size: 13px"> / month</span>
-            </p>
-
-            <ul style="color: #374151; margin: 8px 0 16px; padding-left: 16px">
-              <li>3 pages website</li>
-              <li>Free domain & hosting (1st year)</li>
-              <li>WhatsApp support</li>
-            </ul>
-
-            <div style="display: flex; gap: 8px; flex-wrap: wrap">
-              <button
-                class="btn-subscribe"
-                data-plan="Starter"
-                data-price-month="499"
-                data-price-year="4799"
-                style="
-                  flex: 1;
-                  background: #4a6bff;
-                  color: #fff;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Subscribe (WhatsApp)
-              </button>
-
-              <button
-                class="btn-upi"
-                data-plan="Starter"
-                style="
-                  flex: 1;
-                  background: #f3f4f6;
-                  color: #111827;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Pay via UPI
-              </button>
-            </div>
-          </div>
-
-          <!-- Business (Popular) -->
-          <div
-            class="card"
-            style="
-              background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-              border-radius: 12px;
-              padding: 18px;
-              box-shadow: 0 10px 30px rgba(74, 107, 255, 0.08);
-              border: 1px solid rgba(74, 107, 255, 0.06);
-              position: relative;
-            "
-          >
-            <div
-              style="
-                position: absolute;
-                top: 12px;
-                right: 12px;
-                background: #fbbf24;
-                color: #111827;
-                padding: 6px 10px;
-                border-radius: 8px;
-                font-weight: 600;
-                font-size: 12px;
-              "
-            >
-              Popular
-            </div>
-
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <h3 style="margin: 0; font-size: 18px">Business</h3>
-              <span style="font-size: 13px; color: #6b7280">Best value</span>
-            </div>
-
-            <p style="margin: 12px 0 8px; color: #374151">
-              <span
-                class="price-monthly"
-                style="font-size: 28px; font-weight: 700"
-                >₹1,299</span
-              >
-              <span
-                class="price-yearly"
-                style="font-size: 20px; font-weight: 700; display: none"
-                >₹12,499</span
-              >
-              <span style="color: #6b7280; font-size: 13px"> / month</span>
-            </p>
-
-            <ul style="color: #374151; margin: 8px 0 16px; padding-left: 16px">
-              <li>5–7 pages + admin panel</li>
-              <li>SEO basic setup</li>
-              <li>Priority WhatsApp support</li>
-            </ul>
-
-            <div style="display: flex; gap: 8px; flex-wrap: wrap">
-              <button
-                class="btn-subscribe"
-                data-plan="Business"
-                data-price-month="1299"
-                data-price-year="12499"
-                style="
-                  flex: 1;
-                  background: #111827;
-                  color: #fff;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Subscribe (WhatsApp)
-              </button>
-
-              <button
-                class="btn-upi"
-                data-plan="Business"
-                style="
-                  flex: 1;
-                  background: #f3f4f6;
-                  color: #111827;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Pay via UPI
-              </button>
-            </div>
-          </div>
-
-          <!-- Premium -->
-          <div
-            class="card"
-            style="
-              background: white;
-              border-radius: 12px;
-              padding: 18px;
-              box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-            "
-          >
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-              "
-            >
-              <h3 style="margin: 0; font-size: 18px">Premium</h3>
-              <span style="font-size: 13px; color: #6b7280">Advanced</span>
-            </div>
-
-            <p style="margin: 12px 0 8px; color: #6b7280">
-              <span
-                class="price-monthly"
-                style="font-size: 28px; font-weight: 700"
-                >₹2,499</span
-              >
-              <span
-                class="price-yearly"
-                style="font-size: 20px; font-weight: 700; display: none"
-                >₹23,999</span
-              >
-              <span style="color: #6b7280; font-size: 13px"> / month</span>
-            </p>
-
-            <ul style="color: #374151; margin: 8px 0 16px; padding-left: 16px">
-              <li>E-commerce with payment gateway</li>
-              <li>Custom features & integrations</li>
-              <li>Dedicated support</li>
-            </ul>
-
-            <div style="display: flex; gap: 8px; flex-wrap: wrap">
-              <button
-                class="btn-subscribe"
-                data-plan="Premium"
-                data-price-month="2499"
-                data-price-year="23999"
-                style="
-                  flex: 1;
-                  background: #4a6bff;
-                  color: #fff;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Subscribe (WhatsApp)
-              </button>
-
-              <button
-                class="btn-upi"
-                data-plan="Premium"
-                style="
-                  flex: 1;
-                  background: #f3f4f6;
-                  color: #111827;
-                  border: none;
-                  padding: 10px 12px;
-                  border-radius: 8px;
-                  cursor: pointer;
-                "
-              >
-                Pay via UPI
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Small note -->
-        <p
-          style="
-            text-align: center;
-            color: #6b7280;
-            margin-top: 18px;
-            font-size: 14px;
-          "
-        >
-          Note: Yearly prices are a manual one-time payment. We do not perform
-          automatic recurring charges — you'll confirm & collect renewal
-          manually.
-          <br />
-          Optional:
-          <a
-            href="https://docs.google.com/forms"
-            target="_blank"
-            style="color: #4a6bff; text-decoration: none"
-            >Collect signups via Google Form</a
-          >.
+        <p class="plan-price">
+          <span class="price-monthly">₹499</span>
+          <span class="price-yearly">₹4,799</span>
+          <span class="price-suffix"> / month</span>
         </p>
-      </div>
-    </section>
-
-    <!-- ===== UPI Modal (hidden by default) ===== -->
-    <div
-      id="upiModal"
-      style="
-        position: fixed;
-        inset: 0;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        background: rgba(2, 6, 23, 0.6);
-        z-index: 9999;
-      "
-    >
-      <div
-        style="
-          background: white;
-          border-radius: 12px;
-          width: 420px;
-          max-width: 92%;
-          padding: 18px;
-          box-shadow: 0 12px 40px rgba(2, 6, 23, 0.4);
-        "
-      >
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-          "
-        >
-          <h3 id="upiModalTitle" style="margin: 0; font-size: 18px">
+        <ul>
+          <li>3 pages website</li>
+          <li>Free domain & hosting (1st year)</li>
+          <li>WhatsApp support</li>
+        </ul>
+        <div class="plan-actions">
+          <button
+            class="btn-subscribe"
+            data-plan="Starter"
+            data-price-month="499"
+            data-price-year="4799"
+          >
+            Subscribe (WhatsApp)
+          </button>
+          <button
+            class="btn-upi"
+            data-plan="Starter"
+            data-price-month="499"
+            data-price-year="4799"
+          >
             Pay via UPI
-          </h3>
-          <button
-            id="closeUpi"
-            style="
-              background: none;
-              border: none;
-              font-size: 18px;
-              cursor: pointer;
-            "
-          >
-            ✕
           </button>
         </div>
+      </div>
 
-        <div style="text-align: center; margin-bottom: 12px">
-          <!-- Replace the src with your QR image path -->
-          <img
-            id="upiQr"
-            src="YOUR_UPI_QR.png"
-            alt="UPI QR"
-            style="
-              width: 200px;
-              height: 200px;
-              object-fit: contain;
-              border-radius: 8px;
-              background: #f8fafc;
-            "
-          />
+      <!-- Business -->
+      <div class="plan-card popular">
+        <div class="popular-badge">Popular</div>
+        <div class="plan-header">
+          <h3>Business</h3>
+          <span>Best value</span>
         </div>
-
-        <p style="text-align: center; margin: 6px 0 12px; color: #374151">
-          UPI ID: <strong id="upiIdText">YOUR_UPI_ID</strong>
+        <p class="plan-price">
+          <span class="price-monthly">₹1,299</span>
+          <span class="price-yearly">₹12,499</span>
+          <span class="price-suffix"> / month</span>
         </p>
-
-        <div style="display: flex; gap: 8px">
+        <ul>
+          <li>5–7 pages + admin panel</li>
+          <li>SEO basic setup</li>
+          <li>Priority WhatsApp support</li>
+        </ul>
+        <div class="plan-actions">
           <button
-            id="copyUpi"
-            style="
-              flex: 1;
-              padding: 10px;
-              border-radius: 8px;
-              border: none;
-              background: #4a6bff;
-              color: white;
-              cursor: pointer;
-            "
+            class="btn-subscribe"
+            data-plan="Business"
+            data-price-month="1299"
+            data-price-year="12499"
           >
-            Copy UPI ID
+            Subscribe (WhatsApp)
           </button>
-          <a
-            id="upiIntent"
-            href="#"
-            style="
-              flex: 1;
-              padding: 10px;
-              border-radius: 8px;
-              text-decoration: none;
-              background: #f3f4f6;
-              color: #111827;
-              display: inline-flex;
-              align-items: center;
-              justify-content: center;
-            "
-            >Open UPI app</a
+          <button
+            class="btn-upi"
+            data-plan="Business"
+            data-price-month="1299"
+            data-price-year="12499"
           >
+            Pay via UPI
+          </button>
         </div>
+      </div>
 
-        <p style="font-size: 13px; color: #6b7280; margin-top: 10px">
-          After payment, please send the payment screenshot on WhatsApp so we
-          can confirm your subscription.
+      <!-- Premium -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <h3>Premium</h3>
+          <span>Advanced</span>
+        </div>
+        <p class="plan-price">
+          <span class="price-monthly">₹2,499</span>
+          <span class="price-yearly">₹23,999</span>
+          <span class="price-suffix"> / month</span>
         </p>
+        <ul>
+          <li>E-commerce with payment gateway</li>
+          <li>Custom features & integrations</li>
+          <li>Dedicated support</li>
+        </ul>
+        <div class="plan-actions">
+          <button
+            class="btn-subscribe"
+            data-plan="Premium"
+            data-price-month="2499"
+            data-price-year="23999"
+          >
+            Subscribe (WhatsApp)
+          </button>
+          <button
+            class="btn-upi"
+            data-plan="Premium"
+            data-price-month="2499"
+            data-price-year="23999"
+          >
+            Pay via UPI
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- ===== Minimal JS: toggle, whatsapp links, UPI modal & copy ===== -->
-    <script>
-      // Replace these placeholders with your values:
-      const WHATSAPP_PHONE = "91XXXXXXXXXX"; // without +, E.g. 919876543210
-      const UPI_ID = "YOUR_UPI_ID"; // e.g. yourname@upi
-      const UPI_QR_SRC = "YOUR_UPI_QR.png"; // path to QR image
+    <p class="note">
+      Note: Yearly prices are a manual one-time payment. We do not perform
+      automatic recurring charges — you'll confirm & collect renewal manually.<br />
+      Optional:
+      <a href="https://docs.google.com/forms" target="_blank"
+        >Collect signups via Google Form</a
+      >.
+    </p>
+  </div>
+</section>
 
-      // Toggle UI
-      const billingToggle = document.getElementById("billingToggle");
-      const toggleTrack = document.getElementById("toggleTrack");
-      const toggleDot = document.getElementById("toggleDot");
+<!-- UPI Modal -->
+<div id="upiModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="upiModalTitle">Pay via UPI</h3>
+      <button id="closeUpi">×</button>
+    </div>
+    <div class="qr-container">
+      <img id="upiQr" src="images/QR_CODE.jpg" alt="UPI QR" />
+    </div>
+    <p>UPI ID: <strong id="upiIdText">kumaramankushwaha@ybl</strong></p>
 
-      billingToggle.addEventListener("change", () => {
-        const checked = billingToggle.checked;
-        // UI track
-        toggleTrack.style.background = checked ? "#4a6bff" : "#e6e6e6";
-        toggleDot.style.transform = checked
-          ? "translateX(24px)"
-          : "translateX(0)";
+    <div class="modal-actions">
+      <button id="copyUpi">Copy UPI ID</button>
+      <a id="upiIntent" href="#" target="_blank">Open UPI App</a>
+      <a id="whatsappConfirm" href="#" target="_blank" class="whatsapp-btn">Send Screenshot on WhatsApp</a>
+    </div>
 
-        // Swap price displays
-        document
-          .querySelectorAll(".price-monthly")
-          .forEach((el) => (el.style.display = checked ? "none" : "inline"));
-        document
-          .querySelectorAll(".price-yearly")
-          .forEach((el) => (el.style.display = checked ? "inline" : "none"));
-      });
+    <p class="modal-note">
+      After payment, please send the payment screenshot on WhatsApp so we can
+      confirm your subscription.
+    </p>
+  </div>
+</div>
 
-      // Care Plan Toggle
-      const billingToggleCare = document.getElementById("billingToggleCare");
-      const toggleTrackCare = document.getElementById("toggleTrackCare");
-      const toggleDotCare = document.getElementById("toggleDotCare");
-
-      billingToggleCare.addEventListener("change", () => {
-        const checked = billingToggleCare.checked;
-        toggleTrackCare.style.background = checked ? "#4a6bff" : "#e6e6e6";
-        toggleDotCare.style.transform = checked
-          ? "translateX(24px)"
-          : "translateX(0)";
-        document.querySelector(".price-monthly-care").style.display = checked
-          ? "none"
-          : "inline";
-        document.querySelector(".price-yearly-care").style.display = checked
-          ? "inline"
-          : "none";
-      });
-
-      // Subscription Plans Toggle
-      const billingToggleSub = document.getElementById("billingToggleSub");
-      const toggleTrackSub = document.getElementById("toggleTrackSub");
-      const toggleDotSub = document.getElementById("toggleDotSub");
-
-      billingToggleSub.addEventListener("change", () => {
-        const checked = billingToggleSub.checked;
-        toggleTrackSub.style.background = checked ? "#4a6bff" : "#e6e6e6";
-        toggleDotSub.style.transform = checked
-          ? "translateX(24px)"
-          : "translateX(0)";
-        document
-          .querySelectorAll(".price-monthly")
-          .forEach((el) => (el.style.display = checked ? "none" : "inline"));
-        document
-          .querySelectorAll(".price-yearly")
-          .forEach((el) => (el.style.display = checked ? "inline" : "none"));
-      });
-
-      // WhatsApp Subscribe buttons
-      document.querySelectorAll(".btn-subscribe").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const plan = btn.dataset.plan || "Starter";
-          const priceMonth =
-            btn.dataset.priceMonth ||
-            btn.getAttribute("data-price-month") ||
-            null;
-          const priceYear =
-            btn.dataset.priceYear ||
-            btn.getAttribute("data-price-year") ||
-            null;
-          const yearly = billingToggle.checked;
-
-          // choose price to show in message
-          const priceText = yearly
-            ? priceYear
-              ? "₹" + priceYear + " (yearly)"
-              : "Yearly"
-            : priceMonth
-            ? "₹" + priceMonth + " / month"
-            : "Monthly";
-
-          const message = `Hi, I want to subscribe to the *${plan}* plan — ${priceText}. Please confirm next steps. \n\nName: \nContact: `;
-          const encoded = encodeURIComponent(message);
-
-          // wa.me link
-          const link = `https://wa.me/${WHATSAPP_PHONE}?text=${encoded}`;
-          window.open(link, "_blank");
-        });
-      });
-
-      // UPI modal open
-      const upiModal = document.getElementById("upiModal");
-      const upiQr = document.getElementById("upiQr");
-      const upiIdText = document.getElementById("upiIdText");
-      const upiIntent = document.getElementById("upiIntent");
-      const copyUpi = document.getElementById("copyUpi");
-      const closeUpi = document.getElementById("closeUpi");
-
-      // On UPI button click
-      document.querySelectorAll(".btn-upi").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const plan = btn.dataset.plan || "Plan";
-          // set qr & upi id
-          upiQr.src = UPI_QR_SRC;
-          upiIdText.textContent = UPI_ID;
-
-          // create UPI deep link (opens UPI apps on mobile)
-          // You can include amount param later if you prefer fixed amount: &am=1000
-          upiIntent.href = `upi://pay?pa=${encodeURIComponent(
-            UPI_ID
-          )}&pn=${encodeURIComponent(
-            "KGFs Consultant"
-          )}&tn=${encodeURIComponent(plan + " subscription")}`;
-
-          // show modal
-          upiModal.style.display = "flex";
-        });
-      });
-
-      copyUpi.addEventListener("click", async () => {
-        try {
-          await navigator.clipboard.writeText(UPI_ID);
-          copyUpi.textContent = "Copied ✓";
-          setTimeout(() => (copyUpi.textContent = "Copy UPI ID"), 2000);
-        } catch (e) {
-          alert("Copy failed — please select and copy manually: " + UPI_ID);
-        }
-      });
-
-      closeUpi.addEventListener(
-        "click",
-        () => (upiModal.style.display = "none")
-      );
-      upiModal.addEventListener("click", (e) => {
-        if (e.target === upiModal) upiModal.style.display = "none";
-      });
-
-      // Small helper: replace default placeholders if you want to set via JS
-      // (You can also directly edit constants above)
-      (function initPlaceholders() {
-        document.getElementById("upiQr").src = UPI_QR_SRC;
-        document.getElementById("upiIdText").textContent = UPI_ID;
-      })();
-    </script>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-light">
+    <!-- ===== Combined Portfolio + Projects Section ===== -->
+    <section class="section portfolio-section py-5" id="portfolio">
       <div class="container">
+        <!-- Portfolio Section Header -->
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Our Portfolio</h2>
-          <p class="text-muted">Some of our recent projects and designs</p>
+          <h2 class="fw-bold">Portfolio</h2>
+          <p class="text-muted">Some of our recent client projects</p>
         </div>
 
         <div class="row g-4">
-          <!-- Project 1 -->
+          <!-- Project 1: Chauhan Bakery -->
           <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project1.jpg"
-                class="card-img-top"
-                alt="Business Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Business Website</h5>
-                <p class="card-text text-muted">
-                  A responsive website for a local business to showcase services
-                  and boost online presence.
+            <a
+              href="https://chauhanbakery.kgfsconsultant.com"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card shadow-sm border-0 h-100 portfolio-card hover-effect"
+              >
+                <img
+                  src="../images/chauhan-bakery.png"
+                  class="card-img-top"
+                  alt="Chauhan Bakery E-commerce Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Chauhan Bakery</h5>
+                  <p class="card-text text-muted">
+                    A modern e-commerce website designed for a local bakery to
+                    sell cakes and sweets online. Integrated WhatsApp order
+                    system and responsive mobile design for easy customer
+                    access.
+                  </p>
+                  <span class="badge bg-success">E-Commerce</span>
+                  <div class="mt-3">
+                    <button class="btn btn-sm btn-outline-primary">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 2: Subham Photography -->
+          <div class="col-md-4">
+            <a
+              href="https://subhamphotography.com"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card shadow-sm border-0 h-100 portfolio-card hover-effect"
+              >
+                <img
+                  src="../images/subhamphotography.png"
+                  class="card-img-top"
+                  alt="Subham Photography Portfolio Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Subham Photography</h5>
+                  <p class="card-text text-muted">
+                    A creative portfolio website built for a professional
+                    photographer. Includes an image gallery, client feedback
+                    section, and contact form to help attract new clients.
+                  </p>
+                  <span class="badge bg-warning text-dark">Portfolio</span>
+                  <div class="mt-3">
+                    <button class="btn btn-sm btn-outline-primary">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3: Seva Kendra -->
+          <div class="col-md-4">
+            <a
+              href="https://sevakendra.kgfsconsultant.com"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card shadow-sm border-0 h-100 portfolio-card hover-effect"
+              >
+                <img
+                  src="../images/seva-kendra.png"
+                  class="card-img-top"
+                  alt="Seva Kendra Home Services Website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Seva Kendra</h5>
+                  <p class="card-text text-muted">
+                    A home service platform for electronic repairs and
+                    installations. Developed with a user-friendly interface,
+                    service categories, and direct WhatsApp inquiry integration
+                    for instant booking.
+                  </p>
+                  <span class="badge bg-info text-dark">Home Services</span>
+                  <div class="mt-3">
+                    <button class="btn btn-sm btn-outline-primary">
+                      View Project
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section py-5 bg-light" id="projects">
+      <div class="container">
+        <!-- Projects Section -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Projects</h2>
+          <p class="text-muted">Technical and personal projects</p>
+        </div>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="E-commerce Platform"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="project-content p-3 bg-white">
+                <span class="project-category">Web Application</span>
+                <h5 class="project-title">E-commerce Platform</h5>
+                <p class="project-description text-muted">
+                  Full-featured e-commerce platform with catalog, cart, auth,
+                  and payments.
                 </p>
-                <span class="badge bg-primary">Website</span>
+                <div class="project-tags mb-2">
+                  <span class="badge bg-primary">React</span>
+                  <span class="badge bg-secondary">Node.js</span>
+                  <span class="badge bg-success">MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  |
+                  <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project2.jpg"
-                class="card-img-top"
-                alt="E-commerce Store"
-              />
-              <div class="card-body">
-                <h5 class="card-title">E-commerce Store</h5>
-                <p class="card-text text-muted">
-                  An online store with secure payments, product management, and
-                  customer-friendly UI.
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Task Management App"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="project-content p-3 bg-white">
+                <span class="project-category">Mobile App</span>
+                <h5 class="project-title">Task Management App</h5>
+                <p class="project-description text-muted">
+                  Cross-platform mobile app for tasks with cloud sync and
+                  real-time collaboration.
                 </p>
-                <span class="badge bg-success">E-Commerce</span>
+                <div class="project-tags mb-2">
+                  <span class="badge bg-primary">React Native</span>
+                  <span class="badge bg-success">Firebase</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  |
+                  <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project3.jpg"
-                class="card-img-top"
-                alt="Portfolio Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Portfolio Website</h5>
-                <p class="card-text text-muted">
-                  A creative personal portfolio for a freelancer to showcase
-                  skills and projects.
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                  alt="Portfolio Website"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="project-content p-3 bg-white">
+                <span class="project-category">Website</span>
+                <h5 class="project-title">Creative Portfolio</h5>
+                <p class="project-description text-muted">
+                  Stunning portfolio website with animations, gallery, and
+                  contact form.
                 </p>
-                <span class="badge bg-warning text-dark">Portfolio</span>
+                <div class="project-tags mb-2">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-secondary">CSS</span>
+                  <span class="badge bg-success">JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="#"
+                    ><i class="fas fa-external-link-alt me-1"></i>Live Demo</a
+                  >
+                  |
+                  <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Project 4 -->
-          <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project4.jpg"
-                class="card-img-top"
-                alt="Startup Landing Page"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Startup Landing Page</h5>
-                <p class="card-text text-muted">
-                  A landing page designed to attract leads and convert visitors
-                  for a startup.
-                </p>
-                <span class="badge bg-info text-dark">Landing Page</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project5.jpg"
-                class="card-img-top"
-                alt="School Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">School Website</h5>
-                <p class="card-text text-muted">
-                  A modern school website with class schedules, notices, and
-                  contact features.
-                </p>
-                <span class="badge bg-danger">Education</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="col-md-4">
-            <div class="card shadow-sm border-0 h-100">
-              <img
-                src="images/project6.jpg"
-                class="card-img-top"
-                alt="Blog Website"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Blog Website</h5>
-                <p class="card-text text-muted">
-                  A blog platform with categories, SEO-optimized structure, and
-                  engaging UI.
-                </p>
-                <span class="badge bg-secondary">Blog</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="text-center mt-5">
-          <a href="#contact" class="btn btn-primary btn-lg"
-            >Start Your Project</a
-          >
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- About Company Section -->
+    <section class="section about-company py-5 bg-white" id="about-company">
+      <h2 class="fw-bold text-center">About Us</h2>
+      <div class="container" style="margin-top: 5vh">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5 mb-4 mb-lg-0 text-center text-lg-start">
+            <div
+              class="d-flex flex-column align-items-center align-items-lg-start"
+            >
+              <img
+                src="../images/kgfs-logo-primary.png"
+                alt="KGFS Consultant Logo"
+                style="
+                  height: auto;
+                  border-radius: 24px;
+                  box-shadow: 0 8px 32px rgba(74, 107, 255, 0.12);
+                  background: #fff;
+                "
+                class="mb-3"
+              />
+              <h2
+                class="fw-bold mb-1 text-gradient"
+                style="
+                  font-size: 2.5rem;
+                  background: linear-gradient(90deg, #4a6bff, #00c6ff);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                KGFsConsultant.com
+              </h2>
+              <span
+                class="badge bg-gradient-info text-dark mb-3 px-3 py-2"
+                style="
+                  font-size: 1.1rem;
+                  background: linear-gradient(90deg, #e0eaff, #b2f7ef);
+                "
+              >
+                Your Digital Growth Partner
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div
+              class="p-4 rounded-4 shadow-lg bg-white border border-2 border-primary-subtle"
+            >
+              <p class="lead mb-4" style="font-size: 1.15rem">
+                <strong>KGFSConsultant.com</strong> is your trusted partner for
+                <span class="text-primary fw-semibold"
+                  >modern web development</span
+                >, <span class="text-info fw-semibold">branding</span>, and
+                <span class="text-success fw-semibold">business consulting</span
+                >. Based in India, we blend creativity, technology, and strategy
+                to help startups, SMEs, and enterprises thrive online.
+              </p>
+              <div class="row g-3 mb-3">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="icon-box bg-primary text-white me-3"
+                      style="
+                        font-size: 1.5rem;
+                        border-radius: 12px;
+                        padding: 10px;
+                      "
+                    >
+                      <i class="fas fa-globe-asia"></i>
+                    </span>
+                    <div>
+                      <strong>Full-stack Solutions</strong>
+                      <div class="text-muted small">
+                        Websites, e-commerce, SEO, digital marketing & more
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="icon-box bg-success text-white me-3"
+                      style="
+                        font-size: 1.5rem;
+                        border-radius: 12px;
+                        padding: 10px;
+                      "
+                    >
+                      <i class="fas fa-users"></i>
+                    </span>
+                    <div>
+                      <strong>Client-First Approach</strong>
+                      <div class="text-muted small">
+                        We listen, adapt & deliver tailored results
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="icon-box bg-warning text-white me-3"
+                      style="
+                        font-size: 1.5rem;
+                        border-radius: 12px;
+                        padding: 10px;
+                      "
+                    >
+                      <i class="fas fa-lightbulb"></i>
+                    </span>
+                    <div>
+                      <strong>Innovation & Quality</strong>
+                      <div class="text-muted small">
+                        Latest tech, creative design, robust execution
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="icon-box bg-info text-white me-3"
+                      style="
+                        font-size: 1.5rem;
+                        border-radius: 12px;
+                        padding: 10px;
+                      "
+                    >
+                      <i class="fas fa-rupee-sign"></i>
+                    </span>
+                    <div>
+                      <strong>Affordable Pricing</strong>
+                      <div class="text-muted small">
+                        Transparent, competitive, designed for Indian businesses
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-3 flex-wrap mt-4">
+                <a href="#contact" class="btn btn-primary btn-lg shadow-sm">
+                  <i class="fas fa-paper-plane me-2"></i>Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section about-section py-5" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+            <div
+              class="about-img-wrapper position-relative d-inline-block overflow-hidden rounded-4 shadow-lg"
+            >
+              <img
+                src="../images/aman_kgfs.png"
+                alt="Aman Kumar"
+                class="img-fluid about-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-content p-4 rounded-4 shadow-sm bg-white h-100">
+              <h3 class="fw-bold mb-3 text-primary">Hi, I'm Aman Kumar</h3>
+              <p class="lead mb-3">
+                I’m the
+                <strong
+                  >Founder & CEO of
+                  <span class="badge bg-warning">KGFS Consultant</span></strong
+                >, a startup focused on helping businesses grow through
+                <strong
+                  >digital solutions, web development, and consultancy
+                  services</strong
+                >
+              </p>
+              <ul class="about-list list-unstyled mb-3">
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i> Leading
+                  a team of creative professionals to deliver
+                  <strong>high-quality digital solutions</strong>
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  Experienced in
+                  <strong
+                    >web development, UX design, and business consulting</strong
+                  >
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  Committed to
+                  <strong
+                    >practical solutions and excellent client experience</strong
+                  >
+                </li>
+              </ul>
+              <div class="about-cta d-flex flex-wrap gap-2 mb-3">
+                <span class="badge bg-secondary">Startup Founder</span>
+              </div>
+              <p class="mb-0">
+                Whether you’re a business owner looking for a strong online
+                presence or consultancy services — KGFS Consultant is here to
+                help you succeed.
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://wa.me/919798107150"
+                  class="btn btn-primary me-2"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section py-5 bg-light" id="team">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Meet Our Team</h2>
+          <p class="text-muted">
+            A creative and dedicated team powering KGFS Consultant
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div
+              class="team-card rounded-4 shadow-sm overflow-hidden position-relative"
+            >
+              <img
+                src="../images/akashDeep.png"
+                class="img-fluid team-img"
+                alt="Aakash Dip"
+              />
+              <div class="team-content p-3 bg-white text-center">
+                <h5 class="mb-1">Aakash Dip</h5>
+                <p class="text-muted mb-2">Lead Developer</p>
+                <!-- <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div
+              class="team-card rounded-4 shadow-sm overflow-hidden position-relative"
+            >
+              <img
+                src="../images/rupesh.png"
+                class="img-fluid team-img"
+                alt="Rupesh Kumar"
+              />
+              <div class="team-content p-3 bg-white text-center">
+                <h5 class="mb-1">Rupesh Kumar</h5>
+                <p class="text-muted mb-2">Graphic Designer</p>
+                <!-- <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div
+              class="team-card rounded-4 shadow-sm overflow-hidden position-relative"
+            >
+              <img
+                src="../images/anojKr.png"
+                class="img-fluid team-img"
+                alt="Anoj Kumar"
+              />
+              <div class="team-content p-3 bg-white text-center">
+                <h5 class="mb-1">Anoj Kumar</h5>
+                <p class="text-muted mb-2">Mentor & Coach</p>
+                <!-- <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="section bg-light" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="row">
+          <!-- Testimonial 1: 5.0 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div>
+                <p class="testimonial-content">
+                  "Thanks to KGFsConsultant.com, our bakery now has a beautiful,
+                  functional website. Customers love how easy it is to browse
+                  and order online. The team was professional, attentive, and
+                  completed the project ahead of schedule. Highly recommended!"
+                </p>
+                <div class="rating">
+                  <span class="numeric-rating">5.0</span>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="../images/chauhan-testimonial.png"
+                    alt="Chauhan's Bakery"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Chauhan's Bakery</h5>
+                  <p class="client-role">Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: 4.9 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div>
+                <p class="testimonial-content">
+                  "KGFsConsultant.com transformed our online presence! The
+                  website looks amazing, is user-friendly, and has already
+                  impressed our clients. Highly recommended!"
+                </p>
+                <div class="rating">
+                  <span class="numeric-rating">4.9</span>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="../images/subham-testimonial.png"
+                    alt="Subham Photography"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Subham Photography</h5>
+                  <p class="client-role">Owner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: 4.5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div>
+                <p class="testimonial-content">
+                  "We’re very happy with the work done by KGFsConsultant.com.
+                  They designed a beautiful, functional website that helps us
+                  reach and serve more people effectively. Highly recommended!"
+                </p>
+                <div class="rating">
+                  <span class="numeric-rating">4.5</span>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="client-info">
+                <div class="client-img">
+                  <img
+                    src="../images/sevakendra-testimonial.png"
+                    alt="Seva Kendra Team"
+                  />
+                </div>
+                <div>
+                  <h5 class="client-name">Seva Kendra Team</h5>
+                  <p class="client-role">Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4">Get In Touch</h2>
-        <form class="mx-auto" style="max-width: 600px">
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your Name"
-              required
-            />
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h2 class="fw-bold display-5 mb-3">
+              Let’s Build Your Digital Future
+            </h2>
+            <p class="text-muted fs-5">
+              Share your vision—I’ll turn it into a fast, secure, and stunning
+              web experience.
+            </p>
           </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Your Email"
-              required
-            />
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form
+              id="contactForm"
+              class="bg-white p-4 p-md-5 rounded-4 shadow-sm position-relative border animated-form"
+            >
+              <!-- Name -->
+              <div class="mb-4 position-relative">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="name"
+                    ><i class="fas fa-user me-2 text-primary"></i>Your Name
+                    *</label
+                  >
+                  <div class="invalid-feedback animated-feedback">
+                    Please enter your name.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-4 position-relative">
+                <div class="form-floating">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="email"
+                    ><i class="fas fa-envelope me-2 text-success"></i>Your Email
+                    *</label
+                  >
+                  <div class="invalid-feedback animated-feedback">
+                    Please enter a valid email.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service (Custom Enhanced Dropdown) -->
+              <div class="mb-4 position-relative">
+                <label for="service" class="form-label fw-semibold">
+                  <i class="fas fa-briefcase me-2 text-info"></i>I need help
+                  with *
+                </label>
+                <div class="dropdown w-100">
+                  <button
+                    class="btn btn-outline-secondary w-100 text-start d-flex align-items-center justify-content-between py-3 px-3 rounded-2"
+                    type="button"
+                    id="serviceDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span id="selectedService">Select a service</span>
+                    <i class="fas fa-chevron-down text-muted"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu w-100 mt-1 rounded-2 shadow"
+                    aria-labelledby="serviceDropdown"
+                  >
+                    <!-- Web Dev -->
+                    <li class="px-3 py-2 fw-bold text-primary">
+                      🌐 Web Development
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Website Development"
+                      >
+                        Website Development
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="E-Commerce Solutions"
+                      >
+                        E-Commerce Store
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Frontend Development"
+                      >
+                        Frontend (UI/Interactive)
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Backend Development"
+                      >
+                        Backend & APIs
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Website Maintenance"
+                      >
+                        Maintenance & Updates
+                      </button>
+                    </li>
+
+                    <!-- Design -->
+                    <li class="px-3 py-2 mt-2 fw-bold text-success">
+                      🎨 Design & Branding
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="UI/UX Design"
+                      >
+                        UI/UX Design
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Logo Design"
+                      >
+                        Logo Design
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Graphic Design"
+                      >
+                        Social Media & Graphics
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Photo Editing"
+                      >
+                        Photo Editing
+                      </button>
+                    </li>
+
+                    <!-- Growth -->
+                    <li class="px-3 py-2 mt-2 fw-bold text-info">
+                      📈 Growth & Visibility
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="SEO & Digital Presence"
+                      >
+                        SEO & Performance
+                      </button>
+                    </li>
+
+                    <!-- Other -->
+                    <li class="px-3 py-2 mt-2 fw-bold text-muted">❓ Other</li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Other"
+                      >
+                        Other / Not Sure
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <input type="hidden" id="service" required />
+                <div class="invalid-feedback animated-feedback d-block mt-1">
+                  Please select a service.
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-4 position-relative">
+                <div class="form-floating">
+                  <textarea
+                    id="message"
+                    class="form-control"
+                    placeholder=" "
+                    rows="4"
+                    required
+                  ></textarea>
+                  <label for="message"
+                    ><i class="fas fa-comment-dots me-2 text-warning"></i>Your
+                    Project Details *</label
+                  >
+                  <div class="invalid-feedback animated-feedback">
+                    Tell me about your project.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-success w-100 py-3 fs-5 fw-bold rounded-3 animated-btn"
+              >
+                <i class="fab fa-whatsapp me-2"></i>Send to WhatsApp
+              </button>
+            </form>
           </div>
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              rows="4"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-        <div class="mt-4">
-          <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-success"
-            ><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a
+        </div>
+
+        <!-- Direct WhatsApp Link -->
+        <div class="text-center mt-4">
+          <p class="text-muted mb-2">Or message me directly on WhatsApp:</p>
+          <a
+            href="https://wa.me/919798107150"
+            class="btn btn-outline-success px-4 py-2 fw-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            <i class="fab fa-whatsapp me-2"></i>+91 97981 07150
+          </a>
         </div>
       </div>
     </section>
@@ -1644,7 +1545,7 @@
         <div class="row align-items-center mb-4">
           <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
             <img
-              src="images/kgfs-logo-primary.png"
+              src="../images/kgfs-logo-primary.png"
               alt="KGFs Consultant Logo"
               style="height: 48px; border-radius: 50%"
             />
@@ -1688,44 +1589,31 @@
       </div>
     </footer>
 
-    <!-- ===== Floating Buttons with Staggered Slide-In ===== -->
-
+    <!-- Floating Buttons -->
     <div class="floating-btns">
-      <!-- Back to Top -->
       <div class="floating-btn top-btn" id="backToTop">
         <i class="fas fa-arrow-up"></i>
         <span class="tooltip">Back to Top</span>
       </div>
-
-      <!-- WhatsApp -->
       <a
-        href="https://wa.me/91XXXXXXXXXX"
+        href="https://wa.me/919798107150"
         target="_blank"
         class="floating-btn whatsapp-btn"
       >
         <i class="fab fa-whatsapp"></i>
         <span class="tooltip">Chat with us</span>
       </a>
-
-      <!-- Phone Call -->
-      <a href="tel:+91XXXXXXXXXX" class="floating-btn call-btn">
+      <a href="tel:+919798107150" class="floating-btn call-btn">
         <i class="fas fa-phone"></i>
         <span class="tooltip">Call us</span>
       </a>
     </div>
 
-    <!-- ===== JS for Back to Top & Staggered Animation ===== -->
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Bootstrap JS -->
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js-files/home.js"></script>
-    <script src="js-files/floating.js"></script>
-    <script src="js-files/nav.js"></script>
+    <script src="../js-files/form.js"></script>
+    <script src="../js-files/floating.js"></script>
+    <script src="../js-files/nav.js"></script>
+    <script src="../js-files/pricing.js"></script>
   </body>
 </html>
