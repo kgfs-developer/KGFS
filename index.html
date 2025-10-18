@@ -448,7 +448,9 @@
                 <li>✔ Basic SEO</li>
                 <li>✔ 1 Month Free Support</li>
               </ul>
-              <a href="#contact" class="btn btn-outline-primary get-started-btn">Get Started</a>
+              <a href="#contact" class="btn btn-outline-primary get-started-btn"
+                >Get Started</a
+              >
             </div>
           </div>
           <!-- Standard -->
@@ -466,7 +468,9 @@
                 <li>✔ 3 Months Free Support</li>
                 <li>✔ Contact Form Integration</li>
               </ul>
-              <a href="#contact" class="btn btn-success get-started-btn">Get Started</a>
+              <a href="#contact" class="btn btn-success get-started-btn"
+                >Get Started</a
+              >
             </div>
           </div>
           <!-- Premium -->
@@ -482,184 +486,195 @@
                 <li>✔ 6 Months Free Support</li>
                 <li>✔ Payment Gateway Integration</li>
               </ul>
-              <a href="#contact" class="btn btn-outline-danger get-started-btn">Get Started</a>
+              <a href="#contact" class="btn btn-outline-danger get-started-btn"
+                >Get Started</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-<!-- Subscription Plans (Monthly/Yearly Toggle) -->
-<section id="pricing-free" class="py-12">
-  <div class="container">
-    <div class="text-center mb-7">
-      <h2>Subscription Plans</h2>
-      <p class="text-muted">
-        Free checkout flow — WhatsApp confirmation + UPI payment (zero gateway
-        fees).
-      </p>
-    </div>
-
-    <!-- Billing Toggle -->
-    <div class="billing-toggle-container">
-      <span>Monthly</span>
-      <label class="toggle-switch">
-        <input type="checkbox" id="billingToggleSub" />
-        <span class="toggle-track"></span>
-        <span class="toggle-dot"></span>
-      </label>
-      <span>Yearly <span class="save-badge">(Save 20%)</span></span>
-    </div>
-
-    <!-- Plan Cards -->
-    <div class="plan-cards">
-      <!-- Starter -->
-      <div class="plan-card">
-        <div class="plan-header">
-          <h3>Starter</h3>
-          <span>Basic</span>
+    <!-- Subscription Plans (Monthly/Yearly Toggle) -->
+    <section id="pricing-free" class="py-12">
+      <div class="container">
+        <div class="text-center mb-7">
+          <h2>Subscription Plans</h2>
+          <p class="text-muted">
+            Free checkout flow — WhatsApp confirmation + UPI payment (zero
+            gateway fees).
+          </p>
         </div>
-        <p class="plan-price">
-          <span class="price-monthly">₹499</span>
-          <span class="price-yearly">₹4,799</span>
-          <span class="price-suffix-month"> / Month</span>
-          <span class="price-suffix-year" style="display: none;"> / Year</span>
+
+        <!-- Billing Toggle -->
+        <div class="billing-toggle-container">
+          <span>Monthly</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billingToggleSub" />
+            <span class="toggle-track"></span>
+            <span class="toggle-dot"></span>
+          </label>
+          <span>Yearly <span class="save-badge">(Save 20%)</span></span>
+        </div>
+
+        <!-- Plan Cards -->
+        <div class="plan-cards">
+          <!-- Starter -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Starter</h3>
+              <span>Basic</span>
+            </div>
+            <p class="plan-price">
+              <span class="price-monthly">₹499</span>
+              <span class="price-yearly">₹4,799</span>
+              <span class="price-suffix-month"> / Month</span>
+              <span class="price-suffix-year" style="display: none">
+                / Year</span
+              >
+            </p>
+            <ul>
+              <li>3 pages website</li>
+              <li>Free domain & hosting (1st year)</li>
+              <li>WhatsApp support</li>
+            </ul>
+            <div class="plan-actions">
+              <button
+                class="btn-subscribe"
+                data-plan="Starter"
+                data-price-month="499"
+                data-price-year="4799"
+              >
+                Subscribe (WhatsApp)
+              </button>
+              <button
+                class="btn-upi"
+                data-plan="Starter"
+                data-price-month="499"
+                data-price-year="4799"
+              >
+                Pay via UPI
+              </button>
+            </div>
+          </div>
+
+          <!-- Business -->
+          <div class="plan-card popular">
+            <div class="popular-badge">Popular</div>
+            <div class="plan-header">
+              <h3>Business</h3>
+            </div>
+            <p class="plan-price">
+              <span class="price-monthly">₹1,299</span>
+              <span class="price-yearly">₹12,499</span>
+              <span class="price-suffix-month"> / Month</span>
+              <span class="price-suffix-year" style="display: none">
+                / Year</span
+              >
+            </p>
+            <ul>
+              <li>5–7 pages + admin panel</li>
+              <li>SEO basic setup</li>
+              <li>Priority WhatsApp support</li>
+            </ul>
+            <div class="plan-actions">
+              <button
+                class="btn-subscribe"
+                data-plan="Business"
+                data-price-month="1299"
+                data-price-year="12499"
+              >
+                Subscribe (WhatsApp)
+              </button>
+              <button
+                class="btn-upi"
+                data-plan="Business"
+                data-price-month="1299"
+                data-price-year="12499"
+              >
+                Pay via UPI
+              </button>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Premium</h3>
+              <span>Advanced</span>
+            </div>
+            <p class="plan-price">
+              <span class="price-monthly">₹2,499</span>
+              <span class="price-yearly">₹23,999</span>
+              <span class="price-suffix-month"> / Month</span>
+              <span class="price-suffix-year" style="display: none">
+                / Year</span
+              >
+            </p>
+            <ul>
+              <li>E-commerce with payment gateway</li>
+              <li>Custom features & integrations</li>
+              <li>Dedicated support</li>
+            </ul>
+            <div class="plan-actions">
+              <button
+                class="btn-subscribe"
+                data-plan="Premium"
+                data-price-month="2499"
+                data-price-year="23999"
+              >
+                Subscribe (WhatsApp)
+              </button>
+              <button
+                class="btn-upi"
+                data-plan="Premium"
+                data-price-month="2499"
+                data-price-year="23999"
+              >
+                Pay via UPI
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          Note: Yearly prices are a manual one-time payment. We do not perform
+          automatic recurring charges — you'll confirm & collect renewal
+          manually.<br />
+          Optional:
+          <a href="https://docs.google.com/forms" target="_blank"
+            >Collect signups via Google Form</a
+          >.
         </p>
-        <ul>
-          <li>3 pages website</li>
-          <li>Free domain & hosting (1st year)</li>
-          <li>WhatsApp support</li>
-        </ul>
-        <div class="plan-actions">
-          <button
-            class="btn-subscribe"
-            data-plan="Starter"
-            data-price-month="499"
-            data-price-year="4799"
-          >
-            Subscribe (WhatsApp)
-          </button>
-          <button
-            class="btn-upi"
-            data-plan="Starter"
-            data-price-month="499"
-            data-price-year="4799"
-          >
-            Pay via UPI
-          </button>
-        </div>
       </div>
+    </section>
 
-      <!-- Business -->
-      <div class="plan-card popular">
-        <div class="popular-badge">Popular</div>
-        <div class="plan-header">
-          <h3>Business</h3>
+    <!-- UPI Modal -->
+    <div id="upiModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="upiModalTitle">Pay via UPI</h3>
+          <button id="closeUpi">×</button>
         </div>
-        <p class="plan-price">
-          <span class="price-monthly">₹1,299</span>
-          <span class="price-yearly">₹12,499</span>
-          <span class="price-suffix-month"> / Month</span>
-          <span class="price-suffix-year" style="display: none;"> / Year</span>
+        <div class="qr-container">
+          <img id="upiQr" src="../images/QR_CODE.jpg" alt="UPI QR" />
+        </div>
+        <p>UPI ID: <strong id="upiIdText">kumaramankushwaha@ybl</strong></p>
+
+        <div class="modal-actions">
+          <button id="copyUpi">Copy UPI ID</button>
+          <a id="upiIntent" href="#" target="_blank">Open UPI App</a>
+          <a id="whatsappConfirm" href="#" target="_blank" class="whatsapp-btn"
+            >Send Screenshot on WhatsApp</a
+          >
+        </div>
+
+        <p class="modal-note">
+          After payment, please send the payment screenshot on WhatsApp so we
+          can confirm your subscription.
         </p>
-        <ul>
-          <li>5–7 pages + admin panel</li>
-          <li>SEO basic setup</li>
-          <li>Priority WhatsApp support</li>
-        </ul>
-        <div class="plan-actions">
-          <button
-            class="btn-subscribe"
-            data-plan="Business"
-            data-price-month="1299"
-            data-price-year="12499"
-          >
-            Subscribe (WhatsApp)
-          </button>
-          <button
-            class="btn-upi"
-            data-plan="Business"
-            data-price-month="1299"
-            data-price-year="12499"
-          >
-            Pay via UPI
-          </button>
-        </div>
-      </div>
-
-      <!-- Premium -->
-      <div class="plan-card">
-        <div class="plan-header">
-          <h3>Premium</h3>
-          <span>Advanced</span>
-        </div>
-        <p class="plan-price">
-          <span class="price-monthly">₹2,499</span>
-          <span class="price-yearly">₹23,999</span>
-          <span class="price-suffix-month"> / Month</span>
-          <span class="price-suffix-year" style="display: none;"> / Year</span>
-        </p>
-        <ul>
-          <li>E-commerce with payment gateway</li>
-          <li>Custom features & integrations</li>
-          <li>Dedicated support</li>
-        </ul>
-        <div class="plan-actions">
-          <button
-            class="btn-subscribe"
-            data-plan="Premium"
-            data-price-month="2499"
-            data-price-year="23999"
-          >
-            Subscribe (WhatsApp)
-          </button>
-          <button
-            class="btn-upi"
-            data-plan="Premium"
-            data-price-month="2499"
-            data-price-year="23999"
-          >
-            Pay via UPI
-          </button>
-        </div>
       </div>
     </div>
-
-    <p class="note">
-      Note: Yearly prices are a manual one-time payment. We do not perform
-      automatic recurring charges — you'll confirm & collect renewal manually.<br />
-      Optional:
-      <a href="https://docs.google.com/forms" target="_blank"
-        >Collect signups via Google Form</a
-      >.
-    </p>
-  </div>
-</section>
-
-<!-- UPI Modal -->
-<div id="upiModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="upiModalTitle">Pay via UPI</h3>
-      <button id="closeUpi">×</button>
-    </div>
-    <div class="qr-container">
-      <img id="upiQr" src="../images/QR_CODE.jpg" alt="UPI QR" />
-    </div>
-    <p>UPI ID: <strong id="upiIdText">kumaramankushwaha@ybl</strong></p>
-
-    <div class="modal-actions">
-      <button id="copyUpi">Copy UPI ID</button>
-      <a id="upiIntent" href="#" target="_blank">Open UPI App</a>
-      <a id="whatsappConfirm" href="#" target="_blank" class="whatsapp-btn">Send Screenshot on WhatsApp</a>
-    </div>
-
-    <p class="modal-note">
-      After payment, please send the payment screenshot on WhatsApp so we can
-      confirm your subscription.
-    </p>
-  </div>
-</div>
 
     <!-- ===== Combined Portfolio + Projects Section ===== -->
     <section class="section portfolio-section py-5" id="portfolio">
@@ -904,17 +919,16 @@
                 "
                 class="mb-3"
               />
-              <h2
+              <h1
                 class="fw-bold mb-1 text-gradient"
                 style="
-                  font-size: 2.5rem;
                   background: linear-gradient(90deg, #4a6bff, #00c6ff);
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
                 "
               >
                 KGFsConsultant.com
-              </h2>
+              </h1>
               <span
                 class="badge bg-gradient-info text-dark mb-3 px-3 py-2"
                 style="
