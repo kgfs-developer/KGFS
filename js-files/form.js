@@ -1,5 +1,5 @@
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbyk10z1dxm5WWdakd_-aqEd22MU_a0BUcEg-ZyTL-nbAMZwDfC1BR2uo9gSWFxJwz0z/exec";
+"https://script.google.com/macros/s/AKfycbyk10z1dxm5WWdakd_-aqEd22MU_a0BUcEg-ZyTL-nbAMZwDfC1BR2uo9gSWFxJwz0z/exec";
 
 // Handle custom service dropdown
 document.querySelectorAll(".dropdown-item").forEach((item) => {
