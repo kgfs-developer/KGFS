@@ -127,7 +127,6 @@ document
     try {
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           Name: name.value.trim(),
           Email: email.value.trim(),
@@ -179,4 +178,4 @@ document
       this.classList.remove("is-invalid");
     }
   });
-}); 
+});
