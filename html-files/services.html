@@ -369,7 +369,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-light" style="margin-top: 8vh">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8">
@@ -425,6 +425,26 @@
                   >
                   <div class="invalid-feedback animated-feedback">
                     Please enter a valid email.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="mb-4 position-relative">
+                <div class="form-floating">
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-control"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="phone"
+                    ><i class="fas fa-phone me-2 text-success"></i>Your Phone
+                    Number *</label
+                  >
+                  <div class="invalid-feedback animated-feedback">
+                    Please enter a valid phone number.
                   </div>
                 </div>
               </div>
@@ -485,15 +505,6 @@
                       <button
                         class="dropdown-item"
                         type="button"
-                        data-value="Backend Development"
-                      >
-                        Backend & APIs
-                      </button>
-                    </li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
                         data-value="Website Maintenance"
                       >
                         Maintenance & Updates
@@ -503,15 +514,6 @@
                     <!-- Design -->
                     <li class="px-3 py-2 mt-2 fw-bold text-success">
                       🎨 Design & Branding
-                    </li>
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        type="button"
-                        data-value="UI/UX Design"
-                      >
-                        UI/UX Design
-                      </button>
                     </li>
                     <li>
                       <button
@@ -552,6 +554,15 @@
                         data-value="SEO & Digital Presence"
                       >
                         SEO & Performance
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        data-value="Google Business Optimization"
+                      >
+                        Google Business Profile
                       </button>
                     </li>
 
@@ -595,11 +606,18 @@
               </div>
 
               <!-- Submit Button -->
+              <!-- Google reCAPTCHA -->
+              <div class="mb-4 text-center">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Lc3GGssAAAAAAVGjh4Mg8WurMMBpFXQJFAzXuPT"
+                ></div>
+              </div>
               <button
                 type="submit"
                 class="btn btn-success w-100 py-3 fs-5 fw-bold rounded-3 animated-btn"
               >
-                <i class="fab fa-whatsapp me-2"></i>Send to WhatsApp
+                <i class="fas fa-paper-plane me-2"></i>Submit
               </button>
             </form>
           </div>

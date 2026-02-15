@@ -1,91 +1,182 @@
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyk10z1dxm5WWdakd_-aqEd22MU_a0BUcEg-ZyTL-nbAMZwDfC1BR2uo9gSWFxJwz0z/exec";
 
-  // Handle custom service dropdown
-  document.querySelectorAll('.dropdown-item').forEach(item => {
-    item.addEventListener('click', function () {
-      const value = this.getAttribute('data-value');
-      const text = this.textContent;
-      document.getElementById('selectedService').textContent = text;
-      document.getElementById('service').value = value;
-      
-      // Remove error state
-      const dropdownBtn = document.getElementById('serviceDropdown').closest('.dropdown');
-      dropdownBtn.classList.remove('is-invalid');
-      dropdownBtn.nextElementSibling?.classList.remove('d-block');
-    });
+// Handle custom service dropdown
+document.querySelectorAll(".dropdown-item").forEach((item) => {
+  item.addEventListener("click", function () {
+    const value = this.getAttribute("data-value");
+    const text = this.textContent;
+    document.getElementById("selectedService").textContent = text;
+    document.getElementById("service").value = value;
+
+    // Remove error state
+    const dropdownBtn = document
+      .getElementById("serviceDropdown")
+      .closest(".dropdown");
+    dropdownBtn.classList.remove("is-invalid");
+    dropdownBtn.nextElementSibling?.classList.remove("d-block");
   });
+});
 
-  // Form submission
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
+// Validation helper
+const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
+const validatePhone = (phone) => {
+  const phoneRegex = /^\d{10}$/;
+  return phoneRegex.test(phone);
+};
+
+// Show alert
+const showAlert = (type, message) => {
+  const alertDiv = document.createElement("div");
+  alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+  alertDiv.role = "alert";
+  alertDiv.innerHTML = `
+    ${message}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  `;
+
+  const formContainer = document
+    .getElementById("contactForm")
+    .closest(".col-lg-8");
+  formContainer.insertBefore(alertDiv, document.getElementById("contactForm"));
+
+  setTimeout(() => {
+    alertDiv.remove();
+  }, 6000);
+};
+
+// Form submission
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
     e.preventDefault();
+
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const service = document.getElementById("service");
+    const message = document.getElementById("message");
+    const submitBtn = this.querySelector('button[type="submit"]');
+
     let isValid = true;
 
     // Validate name
-    const name = document.getElementById('name');
     if (!name.value.trim()) {
-      name.classList.add('is-invalid');
+      name.classList.add("is-invalid");
       isValid = false;
     } else {
-      name.classList.remove('is-invalid');
+      name.classList.remove("is-invalid");
     }
 
     // Validate email
-    const email = document.getElementById('email');
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email.value.trim() || !emailRegex.test(email.value)) {
-      email.classList.add('is-invalid');
+    if (!email.value.trim() || !validateEmail(email.value)) {
+      email.classList.add("is-invalid");
       isValid = false;
     } else {
-      email.classList.remove('is-invalid');
+      email.classList.remove("is-invalid");
+    }
+
+    // Validate phone (optional)
+    if (phone.value.trim() && !validatePhone(phone.value)) {
+      phone.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      phone.classList.remove("is-invalid");
     }
 
     // Validate service
-    const service = document.getElementById('service');
-    const dropdownBtn = document.getElementById('serviceDropdown').closest('.dropdown');
+    const dropdownBtn = document
+      .getElementById("serviceDropdown")
+      .closest(".dropdown");
     if (!service.value) {
-      dropdownBtn.classList.add('is-invalid');
-      dropdownBtn.nextElementSibling?.classList.add('d-block');
+      dropdownBtn.classList.add("is-invalid");
+      dropdownBtn.nextElementSibling?.classList.add("d-block");
       isValid = false;
     } else {
-      dropdownBtn.classList.remove('is-invalid');
-      dropdownBtn.nextElementSibling?.classList.remove('d-block');
+      dropdownBtn.classList.remove("is-invalid");
+      dropdownBtn.nextElementSibling?.classList.remove("d-block");
     }
 
     // Validate message
-    const message = document.getElementById('message');
     if (!message.value.trim()) {
-      message.classList.add('is-invalid');
+      message.classList.add("is-invalid");
       isValid = false;
     } else {
-      message.classList.remove('is-invalid');
+      message.classList.remove("is-invalid");
+    }
+
+    // Validate reCAPTCHA
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+      showAlert("danger", "❌ Please verify the reCAPTCHA.");
+      return;
     }
 
     if (!isValid) return;
 
-    // Build WhatsApp message
-    const whatsappMessage = `
-Hello! I'm ${name.value.trim()}.
+    // Disable button and show spinner
+    submitBtn.disabled = true;
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML =
+      '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
 
-📧 Email: ${email.value.trim()}
-🛠️ Service: ${service.value}
-💬 Project: ${message.value.trim()}
-    `.trim();
+    try {
+      const response = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          Name: name.value.trim(),
+          Email: email.value.trim(),
+          Phone: phone.value.trim(),
+          Service: service.value,
+          Message: message.value.trim(),
+          recaptchaToken: recaptchaResponse,
+        }),
+      });
 
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappURL = `https://wa.me/919798107150?text=${encodedMessage}`;
-    
-    window.open(whatsappURL, '_blank');
+      const result = await response.json();
 
-    // Optional: Reset form
-    this.reset();
-    document.getElementById('selectedService').textContent = 'Select a service';
-    document.getElementById('service').value = '';
-  });
+      if (result.success) {
+        showAlert(
+          "success",
+          "✅ Thank you! Your message has been sent successfully. We will contact you shortly.",
+        );
 
-  // Real-time input validation
-  ['name', 'email', 'message'].forEach(id => {
-    document.getElementById(id).addEventListener('input', function () {
-      if (this.value.trim()) {
-        this.classList.remove('is-invalid');
+        // Reset form
+        this.reset();
+        document.getElementById("selectedService").textContent =
+          "Select a service";
+        document.getElementById("service").value = "";
+
+        // Reset reCAPTCHA
+        grecaptcha.reset();
+      } else {
+        showAlert(
+          "danger",
+          `❌ ${result.message || "An error occurred. Please try again."}`,
+        );
       }
-    });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      showAlert(
+        "danger",
+        "❌ Network error. Please check your connection and try again.",
+      );
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+    }
   });
+
+// Real-time input validation
+["name", "email", "phone", "message"].forEach((id) => {
+  document.getElementById(id).addEventListener("input", function () {
+    if (this.value.trim()) {
+      this.classList.remove("is-invalid");
+    }
+  });
+}); 
