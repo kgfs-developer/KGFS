@@ -292,7 +292,6 @@
 /* Section Background */
 .positioning-section {
   background: linear-gradient(135deg, rgba(74, 107, 255, 0.08) 0%, rgba(0, 198, 255, 0.08) 100%);
-  margin-top: 8vh;
 }
 
 /* Gradient Text & Icon Logic */
